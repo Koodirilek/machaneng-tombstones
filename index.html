@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machaneng Tombstones Pty Ltd | Honoring Life with Lasting Tributes</title>
     <meta name="description" content="Machaneng Tombstones Proprietary Limited - Dignified, reliable, and heartfelt memorial solutions in Machaneng and across Botswana. Custom tombstone designs, granite, marble, and professional engraving.">
+    
+    <!-- BROWSER TAB LOGO (FAVICON) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230f172a' rx='15'/%3E%3Cpath d='M 20 90 L 20 45 C 20 25 35 15 50 15 C 65 15 80 25 80 45 L 80 90 Z' fill='%23ffffff' /%3E%3Cpath d='M 45 40 Q 55 30 68 35 Q 60 48 50 48 C 42 48 38 42 35 38 Q 40 38 45 40 Z' fill='%23708a58' /%3E%3C/svg%3E">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter & Serif for elegant typography -->
@@ -72,12 +76,9 @@
                 
                 <!-- BRAND LOGO AREA -->
                 <a href="#" class="flex items-center gap-3 group">
-                    <!-- Inline SVG Logo Placeholder rendering the Dove & Tombstone icon -->
                     <div class="w-12 h-12 bg-slate-900 rounded-lg p-1.5 flex items-center justify-center text-white shadow-md group-hover:bg-brand-sage transition-colors duration-300">
                         <svg viewBox="0 0 100 100" class="w-full h-full fill-current">
-                            <!-- Tombstone shape -->
                             <path d="M 20 90 L 20 45 C 20 25 35 15 50 15 C 65 15 80 25 80 45 L 80 90 Z" fill="#ffffff" />
-                            <!-- Dove Silhouette inside or overlaid -->
                             <path d="M 45 40 Q 55 30 68 35 Q 60 48 50 48 C 42 48 38 42 35 38 Q 40 38 45 40 Z" fill="#708a58" />
                         </svg>
                     </div>
@@ -129,7 +130,6 @@
 
     <!-- HERO SECTION -->
     <section class="relative bg-slate-900 text-white py-20 lg:py-28 overflow-hidden">
-        <!-- Background Overlay Image with Fallback gradient -->
         <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style="background-image: url('images/hero-bg.jpg'), linear-gradient(to right, #0f172a, #1e293b);"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-transparent z-0"></div>
 
@@ -161,7 +161,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-5 space-y-4">
-                    <!-- Local Image Placeholder box formatted for GitHub path -->
                     <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-slate-100 group">
                         <img src="images/about-tombstone.jpg" onerror="this.onerror=null; this.src='https://placehold.co/800x600/1e293b/708a58?text=Machaneng+Tombstones+Craftsmanship';" alt="Machaneng Tombstone Craftsmanship" class="w-full h-80 sm:h-96 object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/80 to-transparent p-6 text-white">
@@ -178,7 +177,7 @@
                         <strong class="text-slate-900">Machaneng Tombstones Proprietary Limited</strong> is a locally owned memorial craftsmanship company established to provide families in Machaneng and the greater surrounding region with dignified, reliable, and heartfelt memorial solutions.
                     </p>
                     <p class="text-slate-600 leading-relaxed">
-                        Founded on compassion, integrity, and respect, our company understands that a tombstone is not simply a stone—it is a sacred tribute, a permanent symbol of love, and a place where memories are preserved for generations. We are committed to walking with families during their time of loss and ensuring that every memorial reflects the life, values, and legacy of their loved one.
+                        Founded on compassion, integrity, and respect, our company understands that a tombstone is not simply a stone — it is a sacred tribute, a permanent symbol of love, and a place where memories are preserved for generations. We are committed to walking with families during their time of loss and ensuring that every memorial reflects the life, values, and legacy of their loved one.
                     </p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
@@ -206,7 +205,9 @@
         </div>
     </section>
 
-    <!-- CATALOGUE SECTION -->
+    <!-- ========================================== -->
+    <!-- CATALOGUE SECTION (EASILY EDITABLE BY YOU) -->
+    <!-- ========================================== -->
     <section id="catalogue" class="py-16 sm:py-24 bg-slate-50 dove-bg-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
@@ -218,32 +219,146 @@
                 </p>
             </div>
 
-            <!-- SEARCH AND FILTER CONTROLS -->
-            <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-sm border border-slate-200 mb-10">
-                <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
-                    
-                    <!-- Search Input -->
-                    <div class="relative w-full md:w-96">
-                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
-                        <input type="text" id="catalog-search" placeholder="Search product code, style, material..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:border-brand-sage focus:ring-2 focus:ring-brand-sage/20 outline-none text-sm transition-all">
-                    </div>
-
-                    <!-- Category Filter Buttons -->
-                    <div class="flex flex-wrap items-center gap-2 w-full md:w-auto" id="filter-buttons">
-                        <button data-filter="all" class="filter-btn active bg-brand-sage text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-sm transition-all">All Products</button>
-                        <button data-filter="granite" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-semibold transition-all">Granite</button>
-                        <button data-filter="marble" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-semibold transition-all">Marble</button>
-                        <button data-filter="children" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-semibold transition-all">Children's</button>
-                        <button data-filter="executive" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-semibold transition-all">Executive & Premium</button>
-                    </div>
-
-                </div>
-            </div>
-
             <!-- CATALOGUE GRID -->
-            <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Products dynamically rendered or statically seeded via JS array for easy management -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- ============================================== -->
+                <!-- PRODUCT 1 - COPY AND PASTE THIS BLOCK TO ADD MORE -->
+                <!-- ============================================== -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <!-- IMAGE: Replace 'images/tombstone1.jpg' with your actual image file name -->
+                    <div class="relative bg-slate-100 overflow-hidden h-64 border-b border-slate-100">
+                        <img src="images/tombstone1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x500/1e293b/708a58?text=Product+1';" alt="Tombstone 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <!-- TITLE & DESCRIPTION: Type your own here -->
+                            <h3 class="font-serif text-lg font-bold text-slate-900 group-hover:text-brand-sage transition-colors">Double-Layer Granite Memorial</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Elegant double-layer granite memorial featuring an arched headstone, silver accent panels, and a full-length ledger with custom engravings.</p>
+                        </div>
+                        <div class="pt-2 flex items-center justify-between border-t border-slate-100">
+                            <!-- PRICE: Type your price here -->
+                            <span class="text-lg font-bold text-brand-sage">P 13,000</span>
+                            <a href="https://wa.me/26775535585?text=Hello%2C%20I%20am%20interested%20in%20the%20Standard%20Granite%20Tombstone%20(P%2012%2C500)." target="_blank" rel="noopener" class="bg-slate-100 hover:bg-brand-sage hover:text-white text-slate-800 font-bold py-2 px-4 rounded-xl text-xs transition-all flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Inquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRODUCT 1 -->
+
+                <!-- ============================================== -->
+                <!-- PRODUCT 2 - COPY AND PASTE THIS BLOCK TO ADD MORE -->
+                <!-- ============================================== -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative bg-slate-100 overflow-hidden h-64 border-b border-slate-100">
+                        <img src="images/tombstone2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x500/1e293b/708a58?text=Product+2';" alt="Tombstone 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-slate-900 group-hover:text-brand-sage transition-colors">Premium Double-Layer Tombstone</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Elegant multi-tier design with polished finish and layered foundation. Perfect for a distinguished tribute.</p>
+                        </div>
+                        <div class="pt-2 flex items-center justify-between border-t border-slate-100">
+                            <span class="text-lg font-bold text-brand-sage">P 18,900</span>
+                            <a href="https://wa.me/26775535585?text=Hello%2C%20I%20am%20interested%20in%20the%20Premium%20Double-Layer%20Tombstone%20(P%2018%2C900)." target="_blank" rel="noopener" class="bg-slate-100 hover:bg-brand-sage hover:text-white text-slate-800 font-bold py-2 px-4 rounded-xl text-xs transition-all flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Inquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRODUCT 2 -->
+
+                <!-- ============================================== -->
+                <!-- PRODUCT 3 - COPY AND PASTE THIS BLOCK TO ADD MORE -->
+                <!-- ============================================== -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative bg-slate-100 overflow-hidden h-64 border-b border-slate-100">
+                        <img src="images/tombstone3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x500/1e293b/708a58?text=Product+3';" alt="Tombstone 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-slate-900 group-hover:text-brand-sage transition-colors">Children's Memorial Tombstone</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Specially designed for children's graves with optional teddy bear or artwork sculpting. Soft and respectful.</p>
+                        </div>
+                        <div class="pt-2 flex items-center justify-between border-t border-slate-100">
+                            <span class="text-lg font-bold text-brand-sage">P 8,500</span>
+                            <a href="https://wa.me/26775535585?text=Hello%2C%20I%20am%20interested%20in%20the%20Children's%20Memorial%20Tombstone%20(P%208%2C500)." target="_blank" rel="noopener" class="bg-slate-100 hover:bg-brand-sage hover:text-white text-slate-800 font-bold py-2 px-4 rounded-xl text-xs transition-all flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Inquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRODUCT 3 -->
+
+                <!-- ============================================== -->
+                <!-- PRODUCT 4 - COPY AND PASTE THIS BLOCK TO ADD MORE -->
+                <!-- ============================================== -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative bg-slate-100 overflow-hidden h-64 border-b border-slate-100">
+                        <img src="images/tombstone4.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x500/1e293b/708a58?text=Product+4';" alt="Tombstone 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-slate-900 group-hover:text-brand-sage transition-colors">Marble Flat Top Tombstone</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Modern flat ledger design with smooth finish and clean border detailing. Elegant and understated.</p>
+                        </div>
+                        <div class="pt-2 flex items-center justify-between border-t border-slate-100">
+                            <span class="text-lg font-bold text-brand-sage">P 15,000</span>
+                            <a href="https://wa.me/26775535585?text=Hello%2C%20I%20am%20interested%20in%20the%20Marble%20Flat%20Top%20Tombstone%20(P%2015%2C000)." target="_blank" rel="noopener" class="bg-slate-100 hover:bg-brand-sage hover:text-white text-slate-800 font-bold py-2 px-4 rounded-xl text-xs transition-all flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Inquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRODUCT 4 -->
+
+                <!-- ============================================== -->
+                <!-- PRODUCT 5 - COPY AND PASTE THIS BLOCK TO ADD MORE -->
+                <!-- ============================================== -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative bg-slate-100 overflow-hidden h-64 border-b border-slate-100">
+                        <img src="images/tombstone5.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x500/1e293b/708a58?text=Product+5';" alt="Tombstone 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-slate-900 group-hover:text-brand-sage transition-colors">Executive Granite Tombstone</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">High-end premium granite with stepped base and pillar accents. A statement of enduring respect.</p>
+                        </div>
+                        <div class="pt-2 flex items-center justify-between border-t border-slate-100">
+                            <span class="text-lg font-bold text-brand-sage">P 25,000</span>
+                            <a href="https://wa.me/26775535585?text=Hello%2C%20I%20am%20interested%20in%20the%20Executive%20Granite%20Tombstone%20(P%2025%2C000)." target="_blank" rel="noopener" class="bg-slate-100 hover:bg-brand-sage hover:text-white text-slate-800 font-bold py-2 px-4 rounded-xl text-xs transition-all flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Inquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRODUCT 5 -->
+
+                <!-- ============================================== -->
+                <!-- PRODUCT 6 - COPY AND PASTE THIS BLOCK TO ADD MORE -->
+                <!-- ============================================== -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+                    <div class="relative bg-slate-100 overflow-hidden h-64 border-b border-slate-100">
+                        <img src="images/tombstone6.jpg" onerror="this.onerror=null; this.src='https://placehold.co/600x500/1e293b/708a58?text=Product+6';" alt="Tombstone 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-lg font-bold text-slate-900 group-hover:text-brand-sage transition-colors">Deluxe Upright Tombstone</h3>
+                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">Traditional upright memorial with polished bevel detailing and headstone. Timeless and sturdy.</p>
+                        </div>
+                        <div class="pt-2 flex items-center justify-between border-t border-slate-100">
+                            <span class="text-lg font-bold text-brand-sage">P 14,200</span>
+                            <a href="https://wa.me/26775535585?text=Hello%2C%20I%20am%20interested%20in%20the%20Deluxe%20Upright%20Tombstone%20(P%2014%2C200)." target="_blank" rel="noopener" class="bg-slate-100 hover:bg-brand-sage hover:text-white text-slate-800 font-bold py-2 px-4 rounded-xl text-xs transition-all flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> Inquire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRODUCT 6 -->
+
             </div>
+            <!-- END CATALOGUE GRID -->
 
             <!-- CUSTOM ORDER BANNER -->
             <div class="mt-16 bg-gradient-to-r from-slate-900 via-brand-slate to-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
@@ -277,7 +392,6 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Service Card 1 -->
                 <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition-shadow group">
                     <div class="w-14 h-14 rounded-xl bg-brand-sage text-white flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-pen-ruler"></i>
@@ -288,7 +402,6 @@
                     </p>
                 </div>
 
-                <!-- Service Card 2 -->
                 <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition-shadow group">
                     <div class="w-14 h-14 rounded-xl bg-brand-sage text-white flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-gem"></i>
@@ -299,7 +412,6 @@
                     </p>
                 </div>
 
-                <!-- Service Card 3 -->
                 <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition-shadow group">
                     <div class="w-14 h-14 rounded-xl bg-brand-sage text-white flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-file-signature"></i>
@@ -310,7 +422,6 @@
                     </p>
                 </div>
 
-                <!-- Service Card 4 -->
                 <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition-shadow group">
                     <div class="w-14 h-14 rounded-xl bg-brand-sage text-white flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-truck-ramp-box"></i>
@@ -321,7 +432,6 @@
                     </p>
                 </div>
 
-                <!-- Service Card 5 -->
                 <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition-shadow group">
                     <div class="w-14 h-14 rounded-xl bg-brand-sage text-white flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-hand-holding-heart"></i>
@@ -332,7 +442,6 @@
                     </p>
                 </div>
 
-                <!-- Service Card 6 - Custom Request -->
                 <div class="p-8 rounded-2xl bg-brand-slate text-white flex flex-col justify-between group">
                     <div>
                         <div class="w-14 h-14 rounded-xl bg-brand-sage text-white flex items-center justify-center text-2xl mb-6">
@@ -463,7 +572,6 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
-                <!-- Phone Contact Card -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 text-center shadow-sm hover:shadow-md transition-shadow">
                     <div class="w-14 h-14 rounded-2xl bg-brand-sage/10 text-brand-sage mx-auto flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-phone-volume"></i>
@@ -476,7 +584,6 @@
                     </div>
                 </div>
 
-                <!-- Email Contact Card -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 text-center shadow-sm hover:shadow-md transition-shadow">
                     <div class="w-14 h-14 rounded-2xl bg-brand-sage/10 text-brand-sage mx-auto flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-envelope-open-text"></i>
@@ -488,7 +595,6 @@
                     </p>
                 </div>
 
-                <!-- Location Contact Card -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 text-center shadow-sm hover:shadow-md transition-shadow">
                     <div class="w-14 h-14 rounded-2xl bg-brand-sage/10 text-brand-sage mx-auto flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-map-location-dot"></i>
@@ -553,313 +659,14 @@
         </div>
     </footer>
 
-    <!-- PRODUCT INQUIRY / QUOTE MODAL -->
-    <div id="quote-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100 max-h-[90vh] overflow-y-auto">
-            
-            <button id="close-modal-btn" class="absolute top-4 right-4 w-9 h-9 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center text-slate-600 transition-colors">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <div class="flex items-center gap-3 mb-4">
-                <div class="w-10 h-10 rounded-xl bg-brand-sage/10 text-brand-sage flex items-center justify-center text-lg font-bold">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-                <div>
-                    <h3 class="font-serif text-xl font-bold text-slate-900">Request Product Quotation</h3>
-                    <p class="text-xs text-slate-500">Inquire regarding code: <span id="modal-product-code" class="font-bold text-brand-sage">#000000</span></p>
-                </div>
-            </div>
-
-            <div class="mb-6 p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-4">
-                <div class="w-16 h-16 rounded-lg bg-slate-200 overflow-hidden shrink-0">
-                    <img id="modal-product-img" src="" alt="Product Preview" class="w-full h-full object-cover">
-                </div>
-                <div>
-                    <p id="modal-product-title" class="font-bold text-slate-900 text-sm">Product Name</p>
-                    <p id="modal-product-desc" class="text-xs text-slate-500 line-clamp-1">Description line</p>
-                    <span id="modal-product-price" class="inline-block mt-1 text-xs font-semibold text-brand-sage">Price on Request</span>
-                </div>
-            </div>
-
-            <form id="quote-form" class="space-y-4">
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Full Name</label>
-                    <input type="text" id="cust-name" required placeholder="e.g. Kagiso Molefe" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-sage focus:border-brand-sage outline-none text-sm">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number (Botswana)</label>
-                    <input type="tel" id="cust-phone" required placeholder="e.g. 72123456" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-sage focus:border-brand-sage outline-none text-sm">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Preferred Granite/Marble Color & Requirements</label>
-                    <textarea id="cust-notes" rows="3" placeholder="Specify preferred colors (Black, Grey, Red), custom inscriptions, or location for installation..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-sage focus:border-brand-sage outline-none text-sm"></textarea>
-                </div>
-
-                <div class="pt-2 flex flex-col gap-2">
-                    <button type="button" id="send-whatsapp-btn" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2 text-sm shadow-md">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Send via WhatsApp Instant Chat
-                    </button>
-                    <button type="button" id="send-email-btn" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-semibold py-2.5 rounded-xl transition-all flex items-center justify-center gap-2 text-xs">
-                        <i class="fa-solid fa-envelope"></i> Send via Email Inquiry
-                    </button>
-                </div>
-            </form>
-
-        </div>
-    </div>
-
     <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Catalogue Products Data - Configured with local relative GitHub image paths & fallback placeholders
-        const catalogProducts = [
-            {
-                code: '#876535',
-                title: 'Standard Granite Tombstone',
-                category: 'granite',
-                desc: 'Classic polished granite memorial with inscription face and durable base.',
-                colors: 'Black, Grey, Red',
-                sizes: 'Customisable',
-                imagePath: 'images/product-876535.jpg',
-                fallbackText: 'Code+%23876535'
-            },
-            {
-                code: '#876545',
-                title: 'Premium Double-Layer Tombstone',
-                category: 'executive',
-                desc: 'Elegant multi-tier design with polished finish and layered foundation.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-876545.jpg',
-                fallbackText: 'Code+%23876545'
-            },
-            {
-                code: '#676555',
-                title: 'Children\'s Memorial Tombstone',
-                category: 'children',
-                desc: 'Specially designed for children\'s graves with optional teddy bear or artwork sculpting.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-676555.jpg',
-                fallbackText: 'Code+%23676555'
-            },
-            {
-                code: '#87645',
-                title: 'Marble Tombstone - Flat Top Style',
-                category: 'marble',
-                desc: 'Modern flat ledger design with smooth finish and clean border detailing.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-87645-marble.jpg',
-                fallbackText: 'Code+%2387645+Marble'
-            },
-            {
-                code: '#87645-E',
-                title: 'Executive Granite Tombstone',
-                category: 'executive',
-                desc: 'High-end premium granite with stepped base and pillar accents.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-87645-executive.jpg',
-                fallbackText: 'Code+%2387645+Executive'
-            },
-            {
-                code: '#88955',
-                title: 'Deluxe Upright Tombstone',
-                category: 'granite',
-                desc: 'Traditional upright memorial with polished bevel detailing and headstone.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-88955.jpg',
-                fallbackText: 'Code+%2388955'
-            },
-            {
-                code: '#87745',
-                title: 'Modern Pillar & Canopy Memorial',
-                category: 'executive',
-                desc: 'Contemporary column structure with covered top and photo engraving panel.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-87745.jpg',
-                fallbackText: 'Code+%2387745'
-            },
-            {
-                code: '#89545',
-                title: 'Dual Wing Memorial Monument',
-                category: 'granite',
-                desc: 'Double monument design with twin inscription tablets suitable for companions.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-89545.jpg',
-                fallbackText: 'Code+%2389545'
-            },
-            {
-                code: '#46545',
-                title: 'Sculpted Open Book Memorial',
-                category: 'marble',
-                desc: 'Intricately carved open Bible/book finish with raised granite pedestal base.',
-                colors: 'Black, Grey',
-                sizes: 'Customisable',
-                imagePath: 'images/product-46545.jpg',
-                fallbackText: 'Code+%2346545'
-            }
-        ];
-
-        // Render Catalog Grid Items
-        function renderCatalogue(items) {
-            const grid = document.getElementById('catalog-grid');
-            grid.innerHTML = '';
-
-            if(items.length === 0) {
-                grid.innerHTML = `
-                    <div class="col-span-full py-12 text-center text-slate-500">
-                        <i class="fa-solid fa-box-open text-4xl text-slate-300 mb-3"></i>
-                        <p class="text-base font-semibold">No tombstone products found matching your search.</p>
-                        <p class="text-xs">Try resetting filters or searching with a different product code.</p>
-                    </div>
-                `;
-                return;
-            }
-
-            items.forEach(product => {
-                const card = document.createElement('div');
-                card.className = 'bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group';
-                
-                // Fallback URL generator using placehold.co
-                const fallbackImg = `https://placehold.co/600x500/1e293b/708a58?text=${product.fallbackText}`;
-
-                card.innerHTML = `
-                    <div class="relative bg-slate-100 overflow-hidden h-64 border-b border-slate-100">
-                        <img src="${product.imagePath}" onerror="this.onerror=null; this.src='${fallbackImg}';" alt="${product.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-xs font-mono font-bold px-3 py-1 rounded-full border border-slate-700">
-                            PRODUCT CODE: ${product.code}
-                        </div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                        <div>
-                            <h3 class="font-serif text-lg font-bold text-slate-900 group-hover:text-brand-sage transition-colors">${product.title}</h3>
-                            <p class="text-xs text-slate-600 mt-2 leading-relaxed">${product.desc}</p>
-                            
-                            <div class="mt-4 pt-3 border-t border-slate-100 grid grid-cols-2 gap-2 text-xs text-slate-500">
-                                <div><strong class="text-slate-700">Colours:</strong> ${product.colors}</div>
-                                <div><strong class="text-slate-700">Sizes:</strong> ${product.sizes}</div>
-                            </div>
-                        </div>
-
-                        <div class="pt-2">
-                            <button onclick="openQuoteModal('${product.code}')" class="w-full bg-slate-100 hover:bg-brand-sage hover:text-white text-slate-800 font-bold py-2.5 px-4 rounded-xl text-xs transition-all flex items-center justify-center gap-2 group-hover:bg-brand-sage group-hover:text-white">
-                                <i class="fa-solid fa-paper-plane"></i> Inquire / Get Quote
-                            </button>
-                        </div>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        // Filter & Search Functionality
-        let currentFilter = 'all';
-
-        function filterAndSearch() {
-            const searchTerm = document.getElementById('catalog-search').value.toLowerCase();
-            const filtered = catalogProducts.filter(item => {
-                const matchesCategory = currentFilter === 'all' || item.category === currentFilter;
-                const matchesSearch = item.code.toLowerCase().includes(searchTerm) || 
-                                      item.title.toLowerCase().includes(searchTerm) || 
-                                      item.desc.toLowerCase().includes(searchTerm);
-                return matchesCategory && matchesSearch;
-            });
-            renderCatalogue(filtered);
-        }
-
-        document.getElementById('catalog-search').addEventListener('input', filterAndSearch);
-
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                document.querySelectorAll('.filter-btn').forEach(b => {
-                    b.classList.remove('bg-brand-sage', 'text-white', 'shadow-sm');
-                    b.classList.add('bg-slate-100', 'text-slate-700');
-                });
-                e.target.classList.remove('bg-slate-100', 'text-slate-700');
-                e.target.classList.add('bg-brand-sage', 'text-white', 'shadow-sm');
-                
-                currentFilter = e.target.getAttribute('data-filter');
-                filterAndSearch();
-            });
-        });
-
-        // Modal Logic
-        let activeProduct = null;
-
-        function openQuoteModal(productCode) {
-            activeProduct = catalogProducts.find(p => p.code === productCode);
-            if(!activeProduct) return;
-
-            document.getElementById('modal-product-code').innerText = activeProduct.code;
-            document.getElementById('modal-product-title').innerText = activeProduct.title;
-            document.getElementById('modal-product-desc').innerText = activeProduct.desc;
-            
-            const fallbackImg = `https://placehold.co/600x500/1e293b/708a58?text=${activeProduct.fallbackText}`;
-            const modalImg = document.getElementById('modal-product-img');
-            modalImg.src = activeProduct.imagePath;
-            modalImg.onerror = function() { this.src = fallbackImg; };
-
-            const modal = document.getElementById('quote-modal');
-            modal.classList.remove('hidden');
-            setTimeout(() => { modal.classList.remove('opacity-0'); }, 10);
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('quote-modal');
-            modal.classList.add('opacity-0');
-            setTimeout(() => { modal.classList.add('hidden'); }, 300);
-        }
-
-        document.getElementById('close-modal-btn').addEventListener('click', closeModal);
-        document.getElementById('quote-modal').addEventListener('click', (e) => {
-            if(e.target === document.getElementById('quote-modal')) closeModal();
-        });
-
-        // Send via WhatsApp
-        document.getElementById('send-whatsapp-btn').addEventListener('click', () => {
-            const name = document.getElementById('cust-name').value.trim();
-            const phone = document.getElementById('cust-phone').value.trim();
-            const notes = document.getElementById('cust-notes').value.trim();
-
-            if(!name || !phone) {
-                alert('Please enter your Name and Contact Phone Number.');
-                return;
-            }
-
-            const message = `Hello Machaneng Tombstones, I would like to get a quote for:\n\n*Product:* ${activeProduct.title} (${activeProduct.code})\n*Name:* ${name}\n*Phone:* ${phone}\n*Details/Preferences:* ${notes || 'Standard specifications'}`;
-            const encodedMsg = encodeURIComponent(message);
-            window.open(`https://wa.me/26775535585?text=${encodedMsg}`, '_blank');
-        });
-
-        // Send via Email
-        document.getElementById('send-email-btn').addEventListener('click', () => {
-            const name = document.getElementById('cust-name').value.trim();
-            const phone = document.getElementById('cust-phone').value.trim();
-            const notes = document.getElementById('cust-notes').value.trim();
-
-            const subject = encodeURIComponent(`Tombstone Inquiry - Product ${activeProduct.code}`);
-            const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nProduct Code: ${activeProduct.code}\nProduct Name: ${activeProduct.title}\n\nAdditional Details:\n${notes}`);
-            
-            window.location.href = `mailto:machanengtombstones@gmail.com?subject=${subject}&body=${body}`;
-        });
-
         // Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
-
-        // Initial Load
-        window.onload = function() {
-            renderCatalogue(catalogProducts);
-        };
     </script>
 </body>
 </html>
+[file content end]
